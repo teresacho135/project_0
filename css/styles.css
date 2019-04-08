@@ -1,0 +1,249 @@
+
+/* FONTS */
+@font-face {
+    font-family: 'CodeDemo-Bold';
+    src: url('CodeDemo-Bold.eot'); /* IE9 Compat Modes */
+    src: url('CodeDemo-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('CodeDemo-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('CodeDemo-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('CodeDemo-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('CodeDemo-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+/* Layout */
+
+
+body {
+    font-family: 'CodeDemo-Bold', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+section {
+    height: 100vh;
+  }
+  
+section p.lead {
+    font-size: 60px;
+  }
+
+.container {
+    max-width: 980px;
+    padding: 5%;
+    margin: 0 auto;
+    background-color: black;
+  }
+
+/* Media */
+
+#nature_clip {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    background: rgba(191, 191, 187, 0.2);
+}
+
+section.outside-container {
+    position: absolute;
+}
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+.head-title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 20px;
+}  
+
+h1{
+    color: white;
+    font-size: 80px;
+    letter-spacing: 18px;
+    padding: 35px;
+    font-weight: 300;
+  }
+
+h2 {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 15px;
+}
+  /* Navigation */
+
+nav {
+    padding: 5px;
+    background: inherit;
+  }
+  
+  nav .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  nav .nav-item {
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    list-style: none;
+  }
+  
+  nav .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav .nav-item:hover {
+    border-bottom: 4px solid white;
+    padding-bottom: 6px;
+  }
+  
+  li.active {
+    border-bottom: 4px solid white;
+    padding-bottom: 10px;
+  }
+  
+/* About */
+
+section.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-content: stretch;
+}
+
+.about {
+  background-color: black;
+  color: white;
+  padding: 25px;
+}
+
+img.about-img {
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 25px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+/* Projects */
+
+section.projects {
+  background-color: black;
+  color: white;
+}
+
+.carousel-inner img {
+  display: block;
+  width: 80%;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  padding: 25px;
+}
+
+/* Testimonals */
+
+section.testimonials {
+  background-color: black;
+  color: white;
+
+}
+
+.carousel-item p {
+  font-size: 30px;
+  text-align: center;
+  margin: 200px;
+}
+
+/* Contact */
+section.contact {
+  background-color: black;
+  color: white;
+}
+
+form {
+  width: 800px;
+  margin: auto;
+}
+
+.contact-submit {
+  padding: 20px 30px;
+  background:white;
+  color:black;
+  font-size: 20px;
+  border-radius: 6px;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: #fff;
+  display:inline-block;
+  text-align:center;
+  font-size: 20px;
+}
+
+@media (max-width: 1780px) {
+  header, h1, h2 {
+    display: none;
+  }
+
+  section p.lead {
+    font-size: 40px;
+    margin: 10px;
+  }
+
+
+  img.about-img {
+  width: 40%; 
+  }
+
+  .carousel-inner img {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .carousel-item p {
+    font-size: 20px;
+  }
+
+  form {
+    width: 350px
+  }
+}
